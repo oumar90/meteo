@@ -4,7 +4,7 @@ def readme():
     with open('README.md') as f:
         README = f.read()
     return README
-
+ 
 
 setup(
     name="meteo",
@@ -21,12 +21,12 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
-    packages=["weather_reporter"],
+    packages=["meteo"],
     include_package_data=True,
     install_requires=["requests"],
     entry_points={
         "console_scripts": [
-            "weather-reporter=weather_reporter.cli:main",
+            "meteo=meteo.cli:main",
         ]
     },
 )

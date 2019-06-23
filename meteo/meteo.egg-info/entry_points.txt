@@ -1,0 +1,3 @@
+[console_scripts]
+meteo = meteo.cli:main
+
